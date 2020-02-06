@@ -16,3 +16,16 @@ class Solution {
         return ans;
     }
 }
+/**
+思路
+最簡單就是用暴力法將nums.length *nums.length 的組合跑一遍，但是其中會有部分重複和無效的組合，如 0 1和 1 0或者是 0 0的組合，
+故只要將重複的部分去除，也就是讓j大於i即可，就可以將n*n所需執行時間為 76 ms降下來
+*/
+
+/**
+結果
+Runtime: 56 ms, faster than 11.21% of Java online submissions for Two Sum.
+Memory Usage: 39.3 MB, less than 5.78% of Java online submissions for Two Sum.
+
+
+*/
